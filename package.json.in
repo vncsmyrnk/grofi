@@ -1,0 +1,23 @@
+{
+  "name": "grofi",
+  "version": "@PACKAGE_VERSION@",
+  "description": "Support rofi's goals on Wayland GNOME",
+  "license": "GPL-3.0",
+  "author": "Vinicius Mayrink <vncsmyrnk@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint extension.ts",
+    "lint:fix": "eslint extension.ts --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@girs/gio-2.0": "^4.9.0",
+    "@girs/gjs": "^4.9.0",
+    "@girs/gnome-shell": "^50.0.4",
+    "eslint": "^10.12.0",
+    "jiti": "^2.7.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.0"
+  }
+}

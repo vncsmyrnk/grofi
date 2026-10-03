@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.grofi" path="/org/gnome/shell/extensions/grofi/">
+    <key name="launch-rofi" type="as">
+      <default><![CDATA[['<Super>g']]]></default>
+      <summary>Launch Rofi</summary>
+    </key>
+    <key name="rofi-extra-arguments" type="as">
+      <default><![CDATA[['-x11', '-normal-window', '-show-icons', '-combi-modes', 'grofi-windows,drun', '-show', 'combi']]]></default>
+      <summary>Additional Rofi arguments</summary>
+    </key>
+  </schema>
+</schemalist>

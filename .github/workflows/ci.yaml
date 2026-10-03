@@ -1,0 +1,28 @@
+name: CI workflow
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v7
+
+      - run: sudo apt-get update && sudo apt-get install -y libglib2.0-dev rofi rofi-dev
+
+      - name: Bootstrap the build system
+        run: autoreconf --install --force
+
+      - name: Configure
+        run: ./configure
+
+      - name: Build
+        run: make
+
+      - run: npm run lint
+
+      - name: Run Distcheck
+        run: make distcheck

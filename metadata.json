@@ -1,0 +1,9 @@
+{
+  "name": "grofi",
+  "description": "Support rofi's goals on Wayland GNOME",
+  "uuid": "grofi@vncsmyrnk.dev",
+  "shell-version": [
+    "50"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.grofi"
+}
